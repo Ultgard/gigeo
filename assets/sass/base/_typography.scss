@@ -1,0 +1,15 @@
+h1,h2,h3{
+    color: $black;
+    font-family: $montserrat;
+}
+
+h1{
+    @include conversor-tamano(font-size, $xx-large);
+    font-weight: $semibold;
+    margin-bottom: 1em;
+}
+
+h2{
+    @include conversor-tamano(font-size, $large);
+    font-weight: $bold;
+}

@@ -1,0 +1,7 @@
+body{
+    font-family: $open-sans;
+    @include conversor-tamano(font-size, $normal);
+    color: $mortar;
+    line-height: $line-height;
+    font-weight: $normal;
+}

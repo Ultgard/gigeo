@@ -1,0 +1,38 @@
+header{
+    padding: 15px 0;
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+.logo{
+    font-family: $poppins;
+    @include conversor-tamano(font-size, $xxx-large);
+    color: $black;
+    position: relative;
+    span{
+        @include conversor-tamano(font-size, $x-small);
+        position: absolute;
+    }
+}
+
+.navigation{
+    color: $black;
+    @include conversor-tamano(font-size, $x-large);
+    &__list{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__item{
+        padding: 10px;
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+        }
+        &:last-child{
+            display: block;
+        }
+    }
+}

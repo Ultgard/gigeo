@@ -1,0 +1,20 @@
+%button{
+    background-color: #e2e4df;
+    line-height: 35px;
+    height: 35px;
+    padding: 0 15px;
+    border: 0;
+    font-family: $montserrat;
+    display: inline-block;
+    @include conversor-tamano(font-size, $normal);
+    color: $white;
+    &:hover{
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+%img-responsive{
+    max-width: 100%;
+    height: auto;
+}

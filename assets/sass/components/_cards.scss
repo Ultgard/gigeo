@@ -1,0 +1,10 @@
+.cards{
+    margin-bottom: 1.5em;
+    &__image{
+        margin-bottom: .5em;
+        @extend %img-responsive;
+    }
+    &__title{
+        margin-bottom: .3em;
+    }
+}

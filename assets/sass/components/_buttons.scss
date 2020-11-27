@@ -1,0 +1,25 @@
+.button-group{
+    display: none;
+    @media (min-width: 768px) {
+        display:block;
+    }
+    .button{
+        margin-left: .8em;
+    }
+}
+
+.button{
+    @extend %button;
+    &-primary{
+        background: $charlotte;
+        &:hover{
+            background: $charlotte-hover;
+        }
+    }
+    &-secondary{
+        background: $burnt-sienna;
+        &:hover{
+            background: $burnt-sienna-hover;
+        }
+    }
+}
